@@ -294,27 +294,12 @@ footer{
 }
 
 @media screen and (max-width: 320px){
-	.header{
-		/* line-height: 40px; */
-	}
 	.header-content h2{
-	
   	font-size: 15px;
   	line-height: 18px;
-  	/* margin: 10px; */
-
   }
   .btn{
     padding: 0 5px;
   }
 }
   
-/* .intro{
-	height: 127vh;
-}
-.intro-text p{
-	line-height: 30px;
-}
-.services{
-	height: 215vh;
-} */
