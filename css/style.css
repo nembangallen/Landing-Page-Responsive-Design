@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.m-f{
+  font-family: 'Aclonica', sans-serif;
+  text-transform: uppercase;
+}
+
+body{
+  background-image: url(../images/back-img.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+main{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header{
+  height: 100vh;
+  color: #ffffff;
+  line-height: 50px;
+}
+
+.header-content{
+  padding-top: 40vh;
+  text-align: center;
+}
+
+.header-content h1, .intro-content h1, .contact-section h1{
+  font-size: 42px;
+}
+
+.header-content h2 span{
+  color: #f1c11a;
+  line-height: 100px;
+}
+
+.btn{
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  padding: 15px 35px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 15px;
+  transition: all 400ms ease-in-out;
+}
+
+.btn-fill{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.btn-fill:hover{
+  background-color: #f1c11a;
+  border-color: transparent;
+}
+
+.btn-trans:hover{
+  background-color: #f1c11a;
+  color: #000000;
+  border-color: transparent;
+}
+
+.intro{
+  background-color: #ffffff;
+  padding: 100px 0 150px; 
+}
+
+.intro-content{
+  height: autog;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro-content div{
+  width: 50%;
+}
+
+.intro-text p{
+  text-align: justify;
+  color: #828282;
+  line-height: 28px;
+}
+
+.services{
+  background-color: #f1c11a;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -120px;
+}
+
+.service-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bucket{
+  width: 25%;
+  margin: 130px 3%;
+  color: #ffffff;
+}
+
+.bucket p{
+  color: #000000;
+  text-align: justify;
+  line-height: 25px;
+}
+
+.contact{
+  background-color: #ffffff;
+  padding: 10vh 0;
+  text-align: center;
+}
+
+input[type='text'], input[type=email], textarea{
+  width: 100%;
+  padding: 12px;
+  border-color: 1px solid #cccccc;
+}
+
+.contact-section div{
+  padding: 10px 3%;
+}
+
+.btn-submit{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-submit:hover{
+  background-color: #f1c11a;
+  border-color: transparent;
+  color: #000000;
+}
+
+.bucket h1 {
+    margin-bottom: 10px;
+}
+
+footer{
+  background-color: #f1c11a;
+  clip-path: polygon(0 0, 15% 0, 50% 20%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  margin-top: -10vh;
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+
+  .services {
+    margin-top: -150px;
+  }
+
+  .header-content h1 {
+    font-size: 32px;
+  }
+
+  .header-content {
+    padding-top: 50px;
+  }
+
+  .intro-content {
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  .intro-text p {
+    line-height: 22px;
+  }
+
+  .intro-img {
+      width: 40% !important;
+  }
+
+  .intro-img img {
+      width: 250px !important;
+  }
+
+  .intro-text {
+      width: 60% !important;
+  }
+
+
+}
+
+
+@media screen and (max-width: 768px){
+  .header-content h2{
+    font-size: 20px;
+  }
+
+  .intro-content{
+    display: block;
+  }
+
+  .intro-content div{
+    width: 100%;
+  }
+
+  .services{
+    clip-path: polygon(0 0, 15% 0, 50% 5%, 85% 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+
+  .service-content{
+    display: block;
+    margin-top: -15vh;
+    padding-top: 1px;
+  }
+
+  .bucket{
+    width: 100%;
+    margin: 50px 3%;
+  }
+
+  .intro-text {
+      width: 100% !important;
+      margin-top: 40px;
+
+  }
+
+  .intro-img {
+      margin: 0 auto;
+  }
+
+  section.services {
+      padding-bottom: 40px;
+  }
+
+}
+
+
+@media (max-width: 425px) {
+
+  .header-content {
+      padding-top: 10px;
+  }
+
+  .header {
+    line-height: 32px;
+  }
+
+  .header-content h2 span {
+    line-height: 30px;
+    margin-top: 20px;
+  }
+
+  .btn {
+    padding: 6px 9px;
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  h1.m-f {
+      margin-bottom: 30px;
+  }
+
+  .intro-text {
+      width: 100% !important;
+      margin-top: 40px;
+
+  }
+  .service-content {
+    padding-top: 60px;
+  }
+
+  .bucket {
+    margin: 40px 3%;
+  }
+}
+@media screen and ( max-width:360px){
+	.header-content h2{
+         font-size: 15px;
+         line-height: 20px;
+         margin: 20px;
+	}
+	.btn{
+		padding: 5px 15px;
+  }
+}
+
+@media screen and (max-width: 320px){
+	.header{
+		/* line-height: 40px; */
+	}
+	.header-content h2{
+	
+  	font-size: 15px;
+  	line-height: 18px;
+  	/* margin: 10px; */
+
+  }
+  .btn{
+    padding: 0 5px;
+  }
+}
+  
+/* .intro{
+	height: 127vh;
+}
+.intro-text p{
+	line-height: 30px;
+}
+.services{
+	height: 215vh;
+} */
